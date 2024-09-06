@@ -15,13 +15,13 @@ const lolLogo =
 
 const SearchPlayer = () => {
   const [gameName, setGameName] = useState("");
-  const [tagName, setTagName] = useState("");
+  const [tagLine, settagLine] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (gameName && tagName) {
-      navigate(`/player/${gameName}/${tagName}`);
+    if (gameName && tagLine) {
+      navigate(`/player/${gameName}/${tagLine}`);
     }
   };
   return (
@@ -49,8 +49,8 @@ const SearchPlayer = () => {
               className="p-4 w-full text-white bg-gray-700 border-none rounded-lg focus:ring-2 focus:ring-purple-500"
             />
             <Input
-              value={tagName}
-              onChange={(e) => setTagName(e.target.value)}
+              value={tagLine}
+              onChange={(e) => settagLine(e.target.value)}
               placeholder="Tagline"
               className="p-4 w-full text-white bg-gray-700 border-none rounded-lg focus:ring-2 focus:ring-purple-500"
             />
