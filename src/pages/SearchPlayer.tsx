@@ -14,8 +14,8 @@ const lolLogo =
   "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9eb028de391e65072d06e77f06d0955f66b9fa2c-736x316.png?auto=format&fit=fill&q=80&w=300";
 
 const SearchPlayer = () => {
-  const [gameName, setGameName] = useState("");
-  const [tagLine, settagLine] = useState("");
+  const [gameName, setGameName] = useState("Agurin");
+  const [tagLine, settagLine] = useState("EUW");
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
